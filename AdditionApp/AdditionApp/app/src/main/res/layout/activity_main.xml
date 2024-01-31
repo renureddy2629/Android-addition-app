@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/First_Text"
+        style="@style/TextField"
+        android:layout_marginTop="8dp"
+        android:hint="Enter First Integer"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Second_Text"
+        style="@style/TextField"
+        android:layout_marginTop="12dp"
+        android:hint="Enter Second Integer"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/First_Text" />
+
+    <Button
+        android:id="@+id/Button"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="12dp"
+        android:onClick="onButtonClick"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Second_Text"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Result"
+        style="@style/ResultTextStyle"
+        android:layout_marginTop="12dp"
+        android:hint="Result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Button"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
